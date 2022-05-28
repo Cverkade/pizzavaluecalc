@@ -1,8 +1,6 @@
 const submitButton = document.getElementById("calculate")
 const resultDiv = document.getElementById("result")
 
-
-submitButton.style.width = "100px"
 submitButton.addEventListener("click", function(e) {
     e.preventDefault();
 
@@ -32,6 +30,7 @@ submitButton.addEventListener("click", function(e) {
         const result1 = document.createElement("p")
         result1.textContent = "Pizza 1: You're getting " + value1 + " cm2 per €1";
         resultDiv.appendChild(result1);
+
         if (value1 < value2 || value1 < value3) {
             result1.style.color = 'red'
         } else {
@@ -41,6 +40,7 @@ submitButton.addEventListener("click", function(e) {
         const result2 = document.createElement("p")
         result2.textContent = "Pizza 2: You're getting " + value2 + " cm2 per €1";
         resultDiv.appendChild(result2);
+
         if (value2 < value1 || value2 < value3) {
             result2.style.color = 'red'
         } else {
@@ -50,12 +50,11 @@ submitButton.addEventListener("click", function(e) {
         const result3 = document.createElement("p")
         result3.textContent = "Pizza 3: You're getting " + value3 + " cm2 per €1";
         resultDiv.appendChild(result3);
-        if (value3 < value1 && value3 < value2) {
+
+        if (value3 < value1 || value3 < value2) {
             result3.style.color = 'red'
         } else {
             result3.style.color = 'green'
         }
     }
-
-
 });

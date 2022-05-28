@@ -29,6 +29,7 @@ input {
 }
 
 #calculate {
+    width: 100px;
     border: 1px solid #183a1d;
     font-weight: 600;
     height: 25px;

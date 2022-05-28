@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Value Calculator</title>
+</head>
+<body>
+    <h4>Calculate the value of 3 different pizza combos</h4>
+    <div id="forms">
+        <form>
+            <h3>Pizza 1</h3>  
+            <label>Diameter of pizza(s)</label><br>  
+            <input type="number" id="pizza1Diameter"><br>  
+            <label>Price of pizza(s)</label><br>  
+            <input type="number" id="pizza1Price"><br>
+            <label># of pizzas this size</label><br>
+            <input type="number" name="amount1" id="amount1" value="1"><br>
+        </form>  
+        <form>
+            <h3>Pizza 2</h3>  
+            <label>Diameter of pizza(s)</label><br>  
+            <input type="text" id="pizza2Diameter"><br>
+            <label>Price of pizza(s)</label><br>  
+            <input type="text" id="pizza2Price"><br>  
+            <label># of pizzas this size</label><br>
+            <input type="number" name="amount2" id="amount2" value="1"><br>
+        </form>  
+        <form>
+            <h3>Pizza 3</h3>  
+            <label>Diameter of pizza(s)</label><br>  
+            <input type="text" id="pizza3Diameter"><br>  
+            <label>Price of pizza(s)</label><br>  
+            <input type="text" id="pizza3Price"><br>  
+            <label># of pizzas this size</label><br>
+            <input type="number" name="amount3" id="amount3" value="1"><br>
+        </form> 
+    </div>
+    <div id="submitButton">
+    <form>
+        <button type="submit"id="calculate">Calculate</button>    
+    </form>
+    </div>
+    <div id="result">
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
